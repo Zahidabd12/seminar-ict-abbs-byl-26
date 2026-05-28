@@ -195,11 +195,11 @@
             </div>
         </section>
 
-        <!-- SLIDE 2: About Me -->
+        <!-- SLIDE 2: Let's Know About Me -->
         <section>
             <div class="flex-container">
                 <div class="col" style="flex: 1.5;">
-                    <div style="font-size: 0.85em; font-weight: 800; color: #64748B; letter-spacing: 2px; margin-bottom: 10px;">00. PEMATERI</div>
+                    <div style="font-size: 0.85em; font-weight: 800; color: #64748B; letter-spacing: 2px; margin-bottom: 10px;">LET'S GET TO KNOW ME!</div>
                     <h3 style="font-size: 2.2em; font-weight: 800; margin-bottom: 15px; color: var(--text-color);">Zahid Abdullah Nur Mukhlishin</h3>
                     <p style="margin-bottom: 25px; font-size: 1.05em;">Bridging data analytics and predictive systems to engineer global solutions.</p>
                     
@@ -223,9 +223,10 @@
                     </ul>
                 </div>
                 <div class="col" style="text-align: center; flex: 1;">
-                    <div style="width: 320px; height: 320px; border-radius: 50%; border: 4px solid var(--accent-color); padding: 8px; margin: 0 auto; background: var(--bg-color);">
-                        <div style="width: 100%; height: 100%; border-radius: 50%; background: #E2E8F0; display: flex; align-items: center; justify-content: center; color: #475569; font-weight: 600; font-size: 0.9em; padding: 20px; text-align: center;">
-                            [ Foto Zahid Abdullah ]
+                    <div style="width: 320px; height: 320px; border-radius: 50%; border: 4px solid var(--accent-color); padding: 8px; margin: 0 auto; background: var(--bg-color); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                        <img src="fotoku.jpg" alt="Zahid Abdullah" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+                        <div id="avatar-fallback" style="display: none; width: 100%; height: 100%; border-radius: 50%; background: #E2E8F0; align-items: center; justify-content: center; color: #475569; font-weight: 600; font-size: 2.2em;">
+                            ZA
                         </div>
                     </div>
                 </div>
@@ -275,7 +276,7 @@
                     </div>
                     <div style="font-size: 1.5em; color: var(--accent-color); display: flex; align-items: center;"><i class="fa-solid fa-arrow-right"></i></div>
                     <div class="data-card" style="padding: 15px 30px; border-top-color: var(--accent-color);">
-                        <span style="font-weight: 700; class='accent'">Sekarang:</span> Literasi Mutlak
+                        <span style="font-weight: 700;" class="accent">Sekarang:</span> Literasi Mutlak
                     </div>
                 </div>
             </div>
@@ -424,17 +425,22 @@
         <!-- SLIDE 14: Pilar 1: Cloud -->
         <section>
             <div class="flex-container">
-                <div class="col">
+                <div class="col" style="flex: 1.1;">
                     <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="image-cover" alt="Cloud Data Center">
                 </div>
-                <div class="col">
-                    <div class="badge" style="background: #94A3B8;">Pilar Pertama</div>
-                    <h2 style="border:none; padding:0; margin-bottom: 10px; font-size: 1.8em;">Cloud Computing</h2>
-                    <h3 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px;">Infrastruktur Tanpa Batas</h3>
-                    <p style="font-size: 0.95em; margin-bottom: 20px;">Jaringan server raksasa global yang menyediakan komputasi, <i>storage</i>, dan database sebagai layanan instan melalui internet (AWS, GCP, Azure).</p>
-                    <div style="background: #F1F5F9; padding: 15px; border-radius: 6px; border-left: 3px solid #94A3B8; font-size: 0.85em;">
-                        <strong>Dampak Industri:</strong> Startup digital kini dapat melayani jutaan pengguna global tanpa perlu memiliki ruang server fisik sendiri.
+                <div class="col" style="flex: 1.2;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <span class="badge" style="margin-bottom: 0; background: #94A3B8;">Pilar Pertama</span>
+                        <h3 style="margin-bottom: 0; display: inline-block; font-size: 1.8em;">Cloud Computing</h3>
                     </div>
+                    <h4 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0.05em;">Infrastruktur Tanpa Batas</h4>
+                    <p style="font-size: 0.95em; margin-bottom: 20px;">Jaringan server raksasa global yang menyediakan komputasi, <i>storage</i>, dan database sebagai layanan instan melalui internet (AWS, GCP, Azure).</p>
+                    <ul class="clean-list" style="font-size: 0.9em; margin: 0;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div><strong>Dampak Industri:</strong> Startup digital kini dapat melayani jutaan pengguna global tanpa perlu memiliki ruang server fisik sendiri.</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -442,16 +448,21 @@
         <!-- SLIDE 15: Pilar 2: IoT -->
         <section>
             <div class="flex-container">
-                <div class="col">
-                    <div class="badge" style="background: #94A3B8;">Pilar Kedua</div>
-                    <h2 style="border:none; padding:0; margin-bottom: 10px; font-size: 1.8em;">Internet of Things (IoT)</h2>
-                    <h3 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px;">Sistem Saraf Dunia Nyata</h3>
-                    <p style="font-size: 0.95em; margin-bottom: 20px;">Jaringan miliaran perangkat fisik (mikrokontroler, sensor) yang saling terhubung ke internet, mengumpulkan dan bertukar data lingkungan secara real-time.</p>
-                    <div style="background: #F1F5F9; padding: 15px; border-radius: 6px; border-left: 3px solid #94A3B8; font-size: 0.85em;">
-                        <strong>Aplikasi Nyata:</strong> Sensor cuaca cerdas, sistem pertanian pintar, pelacakan logistik real-time, perangkat smart home.
+                <div class="col" style="flex: 1.2;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <span class="badge" style="margin-bottom: 0; background: #94A3B8;">Pilar Kedua</span>
+                        <h3 style="margin-bottom: 0; display: inline-block; font-size: 1.8em;">Internet of Things (IoT)</h3>
                     </div>
+                    <h4 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0.05em;">Sistem Saraf Dunia Nyata</h4>
+                    <p style="font-size: 0.95em; margin-bottom: 20px;">Jaringan miliaran perangkat fisik (mikrokontroler, sensor) yang saling terhubung ke internet, mengumpulkan dan bertukar data lingkungan secara real-time.</p>
+                    <ul class="clean-list" style="font-size: 0.9em; margin: 0;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div><strong>Aplikasi Nyata:</strong> Sensor cuaca cerdas, sistem pertanian pintar, pelacakan logistik real-time, perangkat smart home.</div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col">
+                <div class="col" style="flex: 1.1;">
                     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="image-cover" alt="IoT Sensors and Circuit">
                 </div>
             </div>
@@ -460,17 +471,22 @@
         <!-- SLIDE 16: Pilar 3: AI -->
         <section>
             <div class="flex-container">
-                <div class="col">
+                <div class="col" style="flex: 1.1;">
                     <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="image-cover" alt="AI Neural Network">
                 </div>
-                <div class="col">
-                    <div class="badge" style="background: #94A3B8;">Pilar Ketiga</div>
-                    <h2 style="border:none; padding:0; margin-bottom: 10px; font-size: 1.8em;">Artificial Intelligence (AI)</h2>
-                    <h3 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px;">Logika & Mesin Prediktif</h3>
-                    <p style="font-size: 0.95em; margin-bottom: 20px;">Algoritma cerdas yang memproses data skala raksasa (*big data*), mengenali pola kompleks, beradaptasi secara dinamis, dan mengambil keputusan otonom.</p>
-                    <div style="background: #F1F5F9; padding: 15px; border-radius: 6px; border-left: 3px solid #94A3B8; font-size: 0.85em;">
-                        <strong>Revolusi Berjalan:</strong> Generative AI (LLMs), mobil otonom (*self-driving*), deteksi fraud finansial otomatis, diagnosis medis.
+                <div class="col" style="flex: 1.2;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <span class="badge" style="margin-bottom: 0; background: #94A3B8;">Pilar Ketiga</span>
+                        <h3 style="margin-bottom: 0; display: inline-block; font-size: 1.8em;">Artificial Intelligence (AI)</h3>
                     </div>
+                    <h4 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0.05em;">Logika & Mesin Prediktif</h4>
+                    <p style="font-size: 0.95em; margin-bottom: 20px;">Algoritma cerdas yang memproses data skala raksasa (*big data*), mengenali pola kompleks, beradaptasi secara dinamis, dan mengambil keputusan otonom.</p>
+                    <ul class="clean-list" style="font-size: 0.9em; margin: 0;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div><strong>Revolusi Berjalan:</strong> Generative AI (LLMs), mobil otonom (*self-driving*), deteksi fraud finansial otomatis, diagnosis medis.</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -536,17 +552,29 @@
         <!-- SLIDE 20: Smart Cities -->
         <section>
             <div class="flex-container">
-                <div class="col">
-                    <div class="badge" style="background: #94A3B8;">Studi Kasus 01</div>
-                    <h2 style="border:none; padding:0; margin-bottom: 10px; font-size: 1.8em;">Smart Cities & Urban Computing</h2>
+                <div class="col" style="flex: 1.1;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <span class="badge" style="margin-bottom: 0; background: #94A3B8;">Studi Kasus 01</span>
+                        <h3 style="margin-bottom: 0; display: inline-block; font-size: 1.8em;">Smart Cities</h3>
+                    </div>
+                    <h4 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0.05em;">Urban Computing & Connectivity</h4>
                     <p style="margin-bottom: 20px; font-size: 0.95em;">Mengurangi kemacetan parah, konsumsi energi, dan polusi udara perkotaan dengan sensor pintar.</p>
                     <ul class="clean-list" style="font-size: 0.9em;">
-                        <li><i class="fa-solid fa-check accent"></i> <div>Manajemen lalu lintas adaptif otomatis via Computer Vision.</div></li>
-                        <li><i class="fa-solid fa-check accent"></i> <div>Sistem kelistrikan hemat cerdas (Smart Grids).</div></li>
-                        <li><i class="fa-solid fa-check accent"></i> <div>Detektor pencemaran lingkungan berbasis sensor IoT mandiri.</div></li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div>Manajemen lalu lintas adaptif otomatis via Computer Vision.</div>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div>Sistem kelistrikan hemat cerdas (Smart Grids).</div>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div>Detektor pencemaran lingkungan berbasis sensor IoT mandiri.</div>
+                        </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col" style="flex: 1.1;">
                     <img src="https://images.unsplash.com/photo-1473649085228-583485e6e4d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="image-cover" alt="Smart City Overlay">
                 </div>
             </div>
@@ -555,17 +583,25 @@
         <!-- SLIDE 21: Predictive Healthcare -->
         <section>
             <div class="flex-container">
-                <div class="col">
+                <div class="col" style="flex: 1.1;">
                     <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="image-cover" alt="Doctor with tablet medical tech">
                 </div>
-                <div class="col">
-                    <div class="badge" style="background: #94A3B8;">Studi Kasus 02</div>
-                    <h2 style="border:none; padding:0; margin-bottom: 10px; font-size: 1.8em;">Predictive Healthcare Tech</h2>
-                    <h3 class="accent" style="font-size: 1.05em; text-transform: uppercase; margin-bottom: 15px;">Proaktif, Bukan Sekadar Reaktif</h3>
+                <div class="col" style="flex: 1.1;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <span class="badge" style="margin-bottom: 0; background: #94A3B8;">Studi Kasus 02</span>
+                        <h3 style="margin-bottom: 0; display: inline-block; font-size: 1.8em;">Predictive Healthcare Tech</h3>
+                    </div>
+                    <h4 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0.05em;">Proaktif, Bukan Sekadar Reaktif</h4>
                     <p style="font-size: 0.95em; margin-bottom: 20px;">Transformasi cara penanganan medis: dari mengobati penyakit kritis, bergeser ke prediksi dan pencegahan jauh sebelum gejala fisik muncul.</p>
                     <ul class="clean-list" style="font-size: 0.9em;">
-                        <li><i class="fa-solid fa-chevron-right accent"></i> <div>Deteksi dini kanker/tumor berbasis pemindaian model AI.</div></li>
-                        <li><i class="fa-solid fa-chevron-right accent"></i> <div>Analisis struktur DNA genomik masif menggunakan Cloud.</div></li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div>Deteksi dini kanker/tumor berbasis pemindaian model AI.</div>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div>Analisis struktur DNA genomik masif menggunakan Cloud.</div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -574,17 +610,25 @@
         <!-- SLIDE 22: Precision Agriculture -->
         <section>
             <div class="flex-container">
-                <div class="col">
-                    <div class="badge" style="background: #94A3B8;">Studi Kasus 03</div>
-                    <h2 style="border:none; padding:0; margin-bottom: 10px; font-size: 1.8em;">Precision Agriculture</h2>
-                    <h3 class="accent" style="font-size: 1.05em; text-transform: uppercase; margin-bottom: 15px;">Ketahanan Pangan Global</h3>
+                <div class="col" style="flex: 1.1;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <span class="badge" style="margin-bottom: 0; background: #94A3B8;">Studi Kasus 03</span>
+                        <h3 style="margin-bottom: 0; display: inline-block; font-size: 1.8em;">Precision Agriculture</h3>
+                    </div>
+                    <h4 class="accent" style="font-size: 1.1em; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 0.05em;">Ketahanan Pangan Global</h4>
                     <p style="font-size: 0.95em; margin-bottom: 20px;">Mengamankan pasokan pangan dunia dari ancaman perubahan iklim ekstrem lewat pemantauan presisi satelit dan sensor.</p>
                     <ul class="clean-list" style="font-size: 0.9em;">
-                        <li><i class="fa-solid fa-chevron-right accent"></i> <div>AI menganalisis tanah dan memprediksi masa subur tanaman.</div></li>
-                        <li><i class="fa-solid fa-chevron-right accent"></i> <div>Sistem irigasi IoT otomatis yang super efisien air.</div></li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div>AI menganalisis tanah dan memprediksi masa subur tanaman.</div>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fa-solid fa-chevron-right accent" style="margin-top: 5px; font-size: 0.85em;"></i>
+                            <div>Sistem irigasi IoT otomatis yang super efisien air.</div>
+                        </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col" style="flex: 1.1;">
                     <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="image-cover" alt="Drone flying over agricultural field">
                 </div>
             </div>
@@ -593,7 +637,7 @@
         <!-- SLIDE 23: Economic Catalyst -->
         <section>
             <h2>02. Market Validation</h2>
-            <p class="number-stat">$130 MILIAR</p>
+            <p class="number-stat">130 MILIAR USD</p>
             <h3 style="margin-top: 20px; font-size: 1.4em; color: var(--text-color); margin-bottom: 15px;">Proyeksi Skala Ekonomi Digital Indonesia</h3>
             <p style="max-width: 750px; margin: 0 auto; font-size: 1.05em;">Pasar ekonomi digital nasional tumbuh masif. Kondisi ini menuntut tersedianya talenta IT berkualitas unggul—bukan penonton pasif, melainkan arsitek inovasi aktif.</p>
         </section>
@@ -721,25 +765,25 @@
         <!-- SLIDE 33: Direct Action -->
         <section>
             <div class="flex-container">
-                <div class="col">
+                <div class="col" style="flex: 1.2;">
                     <h2>04. Action Plan Malam Ini</h2>
                     <p style="margin-bottom: 25px; font-size: 0.95em;">Mulai langkah kreatif dari meja belajar kalian sendiri:</p>
                     <ul class="clean-list" style="font-size: 0.85em;">
-                        <li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
                             <i class="fa-regular fa-square-check accent" style="font-size: 1.3em;"></i>
                             <div>
                                 <h4 class="text-main" style="margin-bottom: 3px; font-size: 1.1em;">Unduh Code Editor</h4>
                                 <p style="margin: 0;">Pasang program <i>Visual Studio Code</i> di komputer/laptop kalian hari ini juga.</p>
                             </div>
                         </li>
-                        <li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
                             <i class="fa-regular fa-square-check accent" style="font-size: 1.3em;"></i>
                             <div>
                                 <h4 class="text-main" style="margin-bottom: 3px; font-size: 1.1em;">Eksplorasi Kelas Dasar Gratis</h4>
                                 <p style="margin: 0;">Pelajari fundamental pemrograman Python atau HTML/CSS di YouTube, Coursera, atau FreeCodeCamp.</p>
                             </div>
                         </li>
-                        <li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
                             <i class="fa-regular fa-square-check accent" style="font-size: 1.3em;"></i>
                             <div>
                                 <h4 class="text-main" style="margin-bottom: 3px; font-size: 1.1em;">Gunakan GitHub</h4>
@@ -748,7 +792,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col" style="flex: 1;">
                     <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="image-cover" alt="Coding on screen">
                 </div>
             </div>
@@ -779,7 +823,7 @@
         <!-- SLIDE 35: Debugging Mindset -->
         <section>
             <div class="flex-container">
-                <div class="col console-box" style="border: 1px solid rgba(239,68,68,0.3);">
+                <div class="col console-box" style="flex: 1.1; border: 1px solid rgba(239,68,68,0.3);">
                     <div class="console-header">
                         <div class="console-dot" style="background:#EF4444;"></div>
                         <div class="console-dot" style="background:#F59E0B;"></div>
@@ -792,7 +836,7 @@
                     <span style="color: #34D399;">> Patch applied. Re-compiling...</span><br>
                     <span style="color: #34D399; font-weight:bold;">> Build Success! Program Running perfectly.</span>
                 </div>
-                <div class="col">
+                <div class="col" style="flex: 1.1;">
                     <h2>04. Mentalitas Debugging</h2>
                     <h3 class="accent" style="font-size: 1.3em; margin-bottom: 15px;">Error Adalah Sahabat Belajar Terbaik</h3>
                     <p style="font-size: 0.95em; margin-bottom: 15px;">Menjumpai kode program error (*bug*) bukanlah tanda ketidakmampuan, melainkan mekanisme wajib bagi perkembangan kecerdasan seorang engineer.</p>
@@ -810,35 +854,23 @@
             <p style="font-size: 1.1em; font-weight: 700; letter-spacing: 2px; margin-top: 30px; text-transform: uppercase;">— Abraham Lincoln</p>
         </section>
 
-        <!-- SLIDE 37: Q&A -->
-        <section>
-            <h2>05. Interactive Q&A Session</h2>
-            <p style="margin-bottom: 35px; text-align: center;">Silakan ajukan pertanyaan kalian, atau pilih pemantik diskusi di bawah ini:</p>
-            
-            <div class="flex-container stretch" style="gap: 20px;">
-                <div class="data-card col" style="padding: 25px;">
-                    <div style="font-size: 0.7em; font-weight: 800; color: var(--accent-color); letter-spacing: 1px; margin-bottom: 10px;">PROMPT 01</div>
-                    <p style="font-size: 0.95em; font-weight: 600; color: var(--text-color); margin:0;">"Bagaimana prospek lulusan kampus lokal untuk bersaing di perusahaan multinasional?"</p>
-                </div>
-                <div class="data-card col" style="padding: 25px;">
-                    <div style="font-size: 0.7em; font-weight: 800; color: var(--accent-color); letter-spacing: 1px; margin-bottom: 10px;">PROMPT 02</div>
-                    <p style="font-size: 0.95em; font-weight: 600; color: var(--text-color); margin:0;">"Apakah saya bisa belajar AI jika kemampuan matematika dasar saya saat ini pas-pasan?"</p>
-                </div>
-                <div class="data-card col" style="padding: 25px;">
-                    <div style="font-size: 0.7em; font-weight: 800; color: var(--accent-color); letter-spacing: 1px; margin-bottom: 10px;">PROMPT 03</div>
-                    <p style="font-size: 0.95em; font-weight: 600; color: var(--text-color); margin:0;">"Dari semua ragam bahasa pemrograman, mana yang sebaiknya saya pelajari pertama kali?"</p>
-                </div>
-            </div>
+        <!-- SLIDE 37: Interactive Q&A Session -->
+        <section data-background-color="#0F172A" class="dark-slide">
+            <div class="badge" style="background: #38BDF8; color: #0F172A;">Bagian 05</div>
+            <h1 style="font-size: 5.5em; font-weight: 900; letter-spacing: -0.05em; line-height: 1; margin: 0;">Q&A<br><span class="accent">SESSION</span></h1>
+            <p style="font-size: 1.4em; color: #94A3B8; margin-top: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Silakan tanyakan apa saja terkait teknologi masa depan, pilihan karir, sains data, atau langkah aksi nyata.
+            </p>
         </section>
 
         <!-- SLIDE 38: Closing -->
         <section data-background-color="#0F172A" class="dark-slide">
-            <h1 style="font-size: 3.8em; margin-bottom: 35px;">Let's Level Up <span class="accent">Together.</span></h1>
+            <h1 style="font-size: 3.8em; margin-bottom: 45px;">Let's Level Up <span class="accent">Together.</span></h1>
             
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; font-family: 'JetBrains Mono', monospace; font-size: 1.1em; color: #94A3B8;">
-                <div><i class="fa-solid fa-envelope accent" style="margin-right: 10px;"></i> info@abbsboyolali.com</div>
-                <div><i class="fa-solid fa-globe accent" style="margin-right: 10px;"></i> www.abbsboyolali.com</div>
-                <div><i class="fa-brands fa-instagram accent" style="margin-right: 10px;"></i> @abbsboyolali</div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; font-family: 'JetBrains Mono', monospace; font-size: 1.25em; color: #94A3B8;">
+                <div><i class="fa-solid fa-envelope accent" style="margin-right: 12px;"></i> zahidabdullahnm@gmail.com</div>
+                <div><i class="fa-brands fa-instagram accent" style="margin-right: 12px;"></i> @zahidabd._</div>
+                <div><i class="fa-brands fa-linkedin accent" style="margin-right: 12px;"></i> zahidabd</div>
             </div>
         </section>
 
